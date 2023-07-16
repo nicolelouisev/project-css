@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: url(../images/background_portfolio_purple.png);
+    background-repeat: repeat;
+    background-size: 300px;
+}
+
+body, html {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    min-height: 100vh;
+    background-color: #ba69f6;
+    color: #f0defa;
+    padding-top: 60px;
+}
+
+.nav h1 {
+    margin-top: 20px;
+}
+.nav h2 {
+    font-size: 18px;
+    color: #220f33;
+}
+
+.nav img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.nav-icons {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.nav i:hover {
+    color:#220f33;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 80px;
+    gap: 40px;
+}
+
+section {
+    padding: 20px;
+    background-color: #220f33;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #ba69f6;
+    font-size: 30px;
+}
+
+section p {
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.about-me ul {
+    padding: 8px 50px;
+    color: #5ef7be;
+}
+
+.about-me li {
+    list-style-type: none;
+    padding: 8px 0;
+}
+
+.about-me i {
+    padding-right: 10px;
+}
+
+.journey p {
+    padding: 10px 20px 10px 0;
+}
+
+.contrast {
+    color: #5ef7be;
+    font-weight: bold;
+}
+
+.cards-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    gap: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #10061a;
+    color: white;
+    border-radius: 5px;
+    text-align: justify;
+    cursor: pointer;
+}
+
+.card img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    color: #ba69f6;
+}
+
+.contact{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    font-size: 40px;
+    background-color: #5ef7be;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn i {
+    color: #220f33;
+}
+
+.fa-square-envelope i:hover {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    main, .nav {
+        width: 100%;
+    }
+
+    .nav {
+        min-height: 100px;
+        max-height: 350px;
+        padding-top: 20px;
+    }
+
+    .nav h1 {
+        font-size: 24px;
+    }
+
+    .nav img {
+        max-width: 150px;
+    }
+
+    .nav-icons {
+    font-size: 40px;
+    margin-top: 12px;
+    }
+
+    main {
+        padding: 20px;
+        max-width: 767px;
+    }
+
+    section {
+    padding: 10px;
+    }
+
+    .cards-group {
+        margin: 0;
+        display: flex;
+        max-width: 440px;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 200px;
+    }
+}
