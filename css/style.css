@@ -8,9 +8,15 @@ html {
     background-image: url(../images/background_portfolio_purple.png);
     background-repeat: repeat;
     background-size: 300px;
+    --primary-color: #ba69f6;
+    --secondary-color: #220f33;
+    --tertiary-color: #10061a;
+    --quaternary-color: #f0defa;
+    --quinary-color: #5ef7be;
 }
 
-body, html {
+body,
+html {
     min-height: 100vh;
 }
 
@@ -25,7 +31,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #ba69f6;
+    background-color: var(--primary-color);
     color: #f0defa;
     padding-top: 60px;
 }
@@ -33,9 +39,10 @@ body {
 .nav h1 {
     margin-top: 20px;
 }
+
 .nav h2 {
     font-size: 18px;
-    color: #220f33;
+    color: var(--secondary-color);
 }
 
 .nav img {
@@ -47,14 +54,14 @@ body {
     width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     gap: 40px;
     font-size: 50px;
     margin-top: 20px;
 }
 
 .nav i:hover {
-    color:#220f33;
+    color: var(--secondary-color);
 }
 
 main {
@@ -67,12 +74,12 @@ main {
 
 section {
     padding: 20px;
-    background-color: #220f33;
+    background-color: var(--secondary-color);
     border-radius: 5px;
 }
 
 section h2 {
-    color: #ba69f6;
+    color: var(--primary-color);
     font-size: 30px;
     padding-left: 20px;
     margin-bottom: 14px;
@@ -86,7 +93,7 @@ section p {
 
 .about-me ul {
     padding: 8px 50px;
-    color: #5ef7be;
+    color: var(--quinary-color);
 }
 
 .about-me li {
@@ -103,7 +110,7 @@ section p {
 }
 
 .contrast {
-    color: #5ef7be;
+    color: var(--quinary-color);
     font-weight: bold;
 }
 
@@ -125,7 +132,7 @@ section p {
     gap: 10px;
     margin: 20px;
     padding: 20px;
-    background-color: #10061a;
+    background-color: var(--tertiary-color);
     color: white;
     border-radius: 5px;
     text-align: justify;
@@ -142,15 +149,15 @@ section p {
 }
 
 .card h3 {
-    color: #ba69f6;
+    color: var(--primary-color);
 }
 
-.contact{
+.contact {
     position: fixed;
-    bottom:10px;
-    right:10px;
+    bottom: 10px;
+    right: 10px;
     font-size: 40px;
-    background-color: #5ef7be;
+    background-color: var(--quinary-color);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -167,11 +174,7 @@ section p {
 }
 
 .btn i {
-    color: #220f33;
-}
-
-.fa-square-envelope i:hover {
-    color: red;
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -198,8 +201,8 @@ section p {
     }
 
     .nav-icons {
-    font-size: 40px;
-    margin-top: 12px;
+        font-size: 40px;
+        margin-top: 12px;
     }
 
     main {
@@ -237,8 +240,8 @@ section p {
     }
 
     .nav-icons {
-    font-size: 50px;
-    margin-top: 12px;
+        font-size: 50px;
+        margin-top: 12px;
     }
 
     main {
