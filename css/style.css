@@ -74,6 +74,8 @@ section {
 section h2 {
     color: #ba69f6;
     font-size: 30px;
+    padding-left: 20px;
+    margin-bottom: 14px;
 }
 
 section p {
@@ -127,7 +129,6 @@ section p {
     color: white;
     border-radius: 5px;
     text-align: justify;
-    cursor: pointer;
 }
 
 .card img {
